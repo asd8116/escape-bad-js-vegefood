@@ -12,6 +12,6 @@ module.exports = {
     'linebreak-style': ['error', 'windows'],
     'arrow-parens': ['error', 'as-needed'],
     'no-param-reassign': 0,
-    'no-undef': 0,
+    'comma-dangle': ['error', 'only-multiline'],
   },
 };

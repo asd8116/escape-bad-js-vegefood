@@ -1,3 +1,4 @@
+/* global axios */
 const url = 'https://hexschool.github.io/js-filter-data/data.json';
 const table = document.querySelector('.table-content');
 const filter = document.querySelector('.filter');
@@ -27,7 +28,7 @@ const renderData = array => {
 const filterCategory = e => {
   if (e.target.nodeName === 'BUTTON') {
     const showData = data.filter(
-      item => item.種類代碼 === e.target.dataset.category,
+      item => item.種類代碼 === e.target.dataset.category
     );
 
     renderData(showData);
